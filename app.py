@@ -14,7 +14,6 @@ class GreeterHandler(BaseHTTPRequestHandler):
             "<p>Today is a great day to ship code.</p>".encode()
         )
 
-server = HTTPServer(("localhost", 5000), GreeterHandler)
-
+server = HTTPServer(("0.0.0.0", 5000), GreeterHandler)
 print("Server running at http://localhost:5000")
 server.serve_forever()
