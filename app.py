@@ -9,7 +9,8 @@ class GreeterHandler(BaseHTTPRequestHandler):
         self.end_headers()
 
         self.wfile.write(
-            f"<h1>Hello, {NAME}!</h1>"
+            f"<h1>Hi, {NAME}!</h1>"
+
             "<p>Today is a great day to ship code.</p>".encode()
         )
 
